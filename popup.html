@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>PolicyMe Jira Extension</title>
+    <style>
+      .table {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        width: 150px;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .value {
+        letter-spacing: 5px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Keybinds</h2>
+    <div class="table">
+      <div class="row">
+        <div>Next Ticket</div>
+        <div id="next-ticket" class="value"></div>
+      </div>
+      <div class="row">
+        <div>Previous Ticket</div>
+        <div id="previous-ticket" class="value"></div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
